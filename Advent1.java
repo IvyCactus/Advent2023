@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Advent1 {
     public void main() {
-        ArrayList<ArrayList<Integer>> numList = getNums(Runner.readFile("data1.txt"));
+        ArrayList<ArrayList<Integer>> numList = getNums(Runner.readFile(1));
         ArrayList<String> shortList = cutOutMiddle(numList);
         int sum = 0;
         for (String x : shortList) {

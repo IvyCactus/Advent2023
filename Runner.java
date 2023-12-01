@@ -19,11 +19,11 @@ public class Runner {
 
     }
 
-    public static ArrayList<String> readFile(String fileName){
+    public static ArrayList<String> readFile(int num){
         // Declare an ArrayList of Strings
         ArrayList<String> myList = new ArrayList<String>();
         try {
-            BufferedReader br = new BufferedReader(new FileReader(fileName));
+            BufferedReader br = new BufferedReader(new FileReader("DataFiles/data" + String.valueOf(num) + ".txt"));
             // Grab a line of text (this case they happen to be integers)
             String line = br.readLine();
             while (line != null) {
