@@ -18,6 +18,9 @@ public class Runner {
             case 1:
                 Advent1 file1 = new Advent1();
                 file1.main();
+            case 2:
+                Advent2 file2 = new Advent2();
+                file2.main();
         }
 
     }
