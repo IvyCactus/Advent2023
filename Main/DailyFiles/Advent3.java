@@ -56,7 +56,7 @@ public class Advent3 {
      * int end = 0, start = 0;
      * for(int k = j; k >= 0 && Character.isDigit(data.get(i).charAt(k)); k--){
      * start = k;
-     * }
+     * } 
      * for(int k = j; k < data.get(i).length() &&
      * Character.isDigit(data.get(i).charAt(k)); k++){
      * end = k+1;
