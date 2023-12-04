@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import Main.Runner;
 
 public class Advent1 {
-    public void main() {
+    public static void main() {
         ArrayList<ArrayList<Integer>> numList = getNums(Runner.readFile(1));
         ArrayList<String> shortList = cutOutMiddle(numList);
         int sum = 0;
@@ -13,7 +13,7 @@ public class Advent1 {
         }
         System.out.println(sum);
     }
-    private ArrayList<String> cutOutMiddle(ArrayList<ArrayList<Integer>> longList) {
+    private static ArrayList<String> cutOutMiddle(ArrayList<ArrayList<Integer>> longList) {
         ArrayList<String> localShortList = new ArrayList<String>();
         for (int i = 0; i < longList.size(); i++) {
             String temp;
@@ -23,7 +23,7 @@ public class Advent1 {
         }
         return localShortList;
     }
-    private ArrayList<ArrayList<Integer>> getNums(ArrayList<String> stringList) {
+    private static ArrayList<ArrayList<Integer>> getNums(ArrayList<String> stringList) {
         ArrayList<ArrayList<Integer>> numListLocal = new ArrayList<ArrayList<Integer>>();
         for (int j = 0; j < stringList.size(); j++) {
             String x = stringList.get(j);

@@ -16,11 +16,11 @@ public class Runner {
         System.out.println("-----------------------------------");
         switch (choice) {
             case 1:
-                Advent1 file1 = new Advent1();
-                file1.main();
+                Advent1.main();
             case 2:
-                Advent2 file2 = new Advent2();
-                file2.main();
+                Advent2.main();
+            case 3:
+                Advent3.main();
         }
 
     }
