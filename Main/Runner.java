@@ -21,6 +21,8 @@ public class Runner {
                 Advent2.main();
             case 3:
                 Advent3.main();
+            case 4:
+                Advent4.main();
         }
 
     }
