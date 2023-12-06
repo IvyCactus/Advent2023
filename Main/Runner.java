@@ -17,12 +17,19 @@ public class Runner {
         switch (choice) {
             case 1:
                 Advent1.main();
+                break;
             case 2:
                 Advent2.main();
+                break;
             case 3:
                 Advent3.main();
+                break;
             case 4:
                 Advent4.main();
+                break;
+            case 5:
+                Advent5.main();
+                break;
         }
 
     }
