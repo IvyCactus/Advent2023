@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class Advent5 {
-    public static void main() {
+    public static double main() {
         ArrayList<String> inputString = Runner.readFile(5);
         ArrayList<Double[][]> seedMap = new ArrayList<Double[][]>();
         String seeds = inputString.get(0).substring(inputString.get(0).indexOf(":") + 1);
@@ -85,6 +85,6 @@ public class Advent5 {
                 min = seedMap.get(i)[7][0];
             }
         }
-        System.out.println(min);
+        return min;
     }
 }

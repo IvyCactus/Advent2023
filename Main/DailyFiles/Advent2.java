@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 import java.util.ArrayList;
 
 public class Advent2 {
-    public static void main() {
+    public static int main() {
         ArrayList<String> inputString = Runner.readFile(2);
         int sum = 0;
         for (int i = 0; i < 100; i++) {
@@ -36,6 +36,6 @@ public class Advent2 {
             }
             sum += (greenMax * redMax * blueMax);
         }
-        System.out.println(sum);
+        return sum;
     }
 }

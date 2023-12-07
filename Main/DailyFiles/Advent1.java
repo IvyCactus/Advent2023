@@ -1,18 +1,20 @@
 package Main.DailyFiles;
+
 import java.util.ArrayList;
 
 import Main.Runner;
 
 public class Advent1 {
-    public static void main() {
+    public static int main() {
         ArrayList<ArrayList<Integer>> numList = getNums(Runner.readFile(1));
         ArrayList<String> shortList = cutOutMiddle(numList);
         int sum = 0;
         for (String x : shortList) {
             sum += Integer.parseInt(x);
         }
-        System.out.println(sum);
+        return sum;
     }
+
     private static ArrayList<String> cutOutMiddle(ArrayList<ArrayList<Integer>> longList) {
         ArrayList<String> localShortList = new ArrayList<String>();
         for (int i = 0; i < longList.size(); i++) {
@@ -23,6 +25,7 @@ public class Advent1 {
         }
         return localShortList;
     }
+
     private static ArrayList<ArrayList<Integer>> getNums(ArrayList<String> stringList) {
         ArrayList<ArrayList<Integer>> numListLocal = new ArrayList<ArrayList<Integer>>();
         for (int j = 0; j < stringList.size(); j++) {
@@ -52,9 +55,11 @@ public class Advent1 {
                         } else if (x.substring(i, i + 5).equals("three")) {
                             temp.add(3);
                         }
-                    } catch (IndexOutOfBoundsException e) {}
+                    } catch (IndexOutOfBoundsException e) {
+                    }
                     temp.add(Integer.parseInt(x.substring((i), i + 1)));
-                } catch (NumberFormatException e) {}
+                } catch (NumberFormatException e) {
+                }
             }
             numListLocal.add(temp);
         }

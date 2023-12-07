@@ -16,22 +16,24 @@ public class Runner {
         System.out.println("-----------------------------------");
         switch (choice) {
             case 1:
-                Advent1.main();
+                System.out.println(Advent1.main());
                 break;
             case 2:
-                Advent2.main();
+                System.out.println(Advent2.main());
                 break;
             case 3:
-                Advent3.main();
+                System.out.println(Advent3.main());
                 break;
             case 4:
-                Advent4.main();
+                System.out.println(Advent4.main());
                 break;
             case 5:
-                Advent5.main();
+                System.out.println(Advent5.main());
+                break;
+            case 6:
+                System.out.println(Advent6.main());
                 break;
         }
-
     }
 
     public static ArrayList<String> readFile(int num){

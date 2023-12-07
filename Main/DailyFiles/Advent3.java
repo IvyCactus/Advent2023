@@ -4,7 +4,7 @@ import Main.Runner;
 import java.util.ArrayList;
 
 public class Advent3 {
-    public static void main() {
+    public static int main() {
         ArrayList<String> inputString = Runner.readFile(3);
         int sum = 0;
         for (int i = 0; i < inputString.size(); i++) {
@@ -39,7 +39,7 @@ public class Advent3 {
                 }
             }
         }
-        System.out.println(sum);
+        return sum;
         // Part 1 code, part 2 I had to change my method :/
         // boolean[][] flagField = loopList(inputString, new
         // boolean[inputString.size()][inputString.get(0).length()]);

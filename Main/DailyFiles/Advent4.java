@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class Advent4 {
-    public static void main() {
+    public static int main() {
         ArrayList<String> inputString = Runner.readFile(4);
         int loops = 0;
         int[] copies = new int[inputString.size()];
@@ -40,6 +40,6 @@ public class Advent4 {
                 loops++;
             }
         }
-        System.out.println(loops);
+        return loops;
     }
 }
