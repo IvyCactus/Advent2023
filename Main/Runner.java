@@ -42,14 +42,18 @@ public class Runner {
             case 9:
                 System.out.println(Advent9.main());
                 break;
+            case 10:
+                System.out.println(Advent10.main());
+                break;
         }
     }
 
-    public static ArrayList<String> readFile(int num){
+    public static ArrayList<String> readFile(int num) {
         // Declare an ArrayList of Strings
         ArrayList<String> myList = new ArrayList<String>();
         try {
-            BufferedReader br = new BufferedReader(new FileReader("Main/DataFiles/data" + String.valueOf(num) + ".txt"));
+            BufferedReader br = new BufferedReader(
+                    new FileReader("Main/DataFiles/data" + String.valueOf(num) + ".txt"));
             // Grab a line of text (this case they happen to be integers)
             String line = br.readLine();
             while (line != null) {
