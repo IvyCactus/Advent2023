@@ -48,6 +48,9 @@ public class Runner {
             case 11: 
                 System.out.println(Advent11.main());
                 break;
+            case 12: 
+                System.out.println(Advent12.main());
+                break;
         }
     }
 
